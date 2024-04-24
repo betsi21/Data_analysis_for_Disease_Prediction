@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>BAYMAX | Homepage</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/carousel/">
+
+     <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='index.css') }}">
+
+</head>
+<body>
+    <form id="form1">
+        <header>
+            <!--Navigation Bar-->
+			<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+                <a class="navbar-brand" href="#"><b>BAYMAX</b></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about">About Us</a>
+                    </li>
+                    <li class="nav-item">
+		                <a class="nav-link" href="/login">Login</a>
+		            </li>
+                    <li class="nav-item">
+		                <a class="nav-link" href="/signup">Sign Up</a>
+		            </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <!--Image Carousel-->
+		<div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+        <div class="carousel-item active">
+            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"/></svg>
+            <img src="static/img/banner.png" />
+        <div class="container">
+        </div>
+      </div>
+      <div class="carousel-item">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"/></svg>
+          <img src="static/img/banner2.png" />
+          <div class="container">
+          <div class="carousel-caption text-left">
+            <h1><b>Efficient and Reliable.</b></h1>
+            <p>An efficient and a reliable tool to generate your risk assessments. Learn more about RiskAsess.</p>
+            <p><a class="btn btn-lg btn-primary" href="/about" role="button">Learn More</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"/></svg>
+          <img src="static/img/banner3.png" />
+          <div class="container">
+          <div class="carousel-caption text-right">
+            <h1><b>Simple and Non-Complex.</b></h1>
+            <p>The Development Process is Simplified using a Clean and an Elegant User Interface with Minimal Complexities.</p>
+            <p><a class="btn btn-lg btn-primary" href="/about" role="button">About Us</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+    <!--Build with Ease and Logos section-->
+    <div class="container-fluid padding">
+    <div class="row welcome text-center">
+        <div class="col-12">
+            <h1 class="display-4">Assess with ease.</h1>
+        </div>
+        <hr />
+        <div class="col-12">
+            <p class="lead">
+                A Risk Assessment Tool that allows for the swift, efficient and smooth generation of risk assessments for your patients.
+            </p>
+        </div>
+    </div>
+    </div>
+    <div class="container-fluid">
+    <div class="row text-center padding">
+        <div class="col-xs-12 col-sm-6 col-md-4">
+            <i class="fa fa-bolt" aria-hidden="true"></i>
+            <h3>Fast</h3>
+            <p>Fast and Smooth Assessment.</p>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4">
+            <i class="fa fa-lock" aria-hidden="true"></i>
+            <h3>Secure</h3>
+            <p>Secure Assessment Process.</p>
+        </div>
+        <div class="col-sm-12 col-md-4">
+            <i class="fa fa-check-square" aria-hidden="true"></i>
+            <h3>Reliable</h3>
+            <p>Reliable and Trustworthy Process.</p>
+        </div>
+    </div>
+    <hr class="my-4"/>
+    </div>
+
+    <div class="container">
+        <h1 style="text-align:center;">Baymax - Disease Index</h1>
+    <p style="text-align:center;">This is a directory of all the diseases that Baymax can generate assessments for, this index provides in depth.
+    details about the disease including its symptoms.</p>
+    <h2>1. Breast Cancer </h2>
+    <div style="text-align: center; margin-top: 20px">
+       <img style="max-width: 600px" src="static/img/breastcancer.jpg" /><br/><br/>
+   </div>
+    <p>Breast cancer is cancer that develops from breast tissue. Signs of breast cancer may include a lump in the breast, a change in breast shape, dimpling of the skin, fluid coming from the nipple, a newly inverted nipple, or a red or scaly patch of skin.<br></p>
+
+    <h3>Symptoms</h3>
+    <p>Signs and symptoms of breast cancer may include:</p>
+    <ul>
+      <li>A breast lump or thickening that feels different from the surrounding tissue</li>
+      <li>Change in the size, shape or appearance of a breast
+      </li>
+      <li>
+        Changes to the skin over the breast, such as dimpling
+      </li>
+      <li>
+        A newly inverted nipple
+      </li>
+      <li>Peeling, scaling, crusting or flaking of the pigmented area of skin surrounding the nipple (areola) or breast skin</li>
+      <li>Redness or pitting of the skin over your breast, like the skin of an orange</li>
+    </ul>
+    <h3>Causes</h3>
+    <p>Doctors know that breast cancer occurs when some breast cells begin to grow abnormally. These cells divide more rapidly than healthy cells do and continue to accumulate, forming a lump or mass. Cells may spread (metastasize) through your breast to your lymph nodes or to other parts of your body.<br>
+Breast cancer most often begins with cells in the milk-producing ducts (invasive ductal carcinoma). Breast cancer may also begin in the glandular tissue called lobules (invasive lobular carcinoma) or in other cells or tissue within the breast.
+<br>
+Researchers have identified hormonal, lifestyle and environmental factors that may increase your risk of breast cancer. But it's not clear why some people who have no risk factors develop cancer, yet other people with risk factors never do. It's likely that breast cancer is caused by a complex interaction of your genetic makeup and your environment.</p>
+<br>
+<hr>
+<br>
+<h2>2.Kidney Disease</h2>
+<div style="text-align: center; margin-top: 20px">
+       <img style="max-width: 600px" src="static/img/kidney.png" /><br/>
+   </div>
+<h3>Overview</h3>
+<p>The kidneys play key roles in body function, not only by filtering the blood and getting rid of waste products, but also by balancing the electrolyte levels in the body, controlling blood pressure, and stimulating the production of red blood cells.<br>
+
+The kidneys are located in the abdomen toward the back, normally one on each side of the spine. They get their blood supply through the renal arteries directly from the aorta and send blood back to the heart via the renal veins to the vena cava. (The term "renal" is derived from the Latin name for kidney.)<br>
+</p>
+<ul>
+    <li>Lethargy</li>
+   <li> Weakness</li>
+    <li>Shortness of breath</li>
+    <li>Generalized swelling (edema)</li>
+    <li>Generalized weakness due to anemia</li>
+    <li>Loss of appetite</li>
+    <li>Lethargy</li>
+    <li>Fatigue</li>
+    <li>Congestive heart failure</li>
+    <li>Metabolic acidosis</li>
+    <li>High blood potassium (hyperkalemia)</li>
+    <li>Fatal heart rhythm disturbances (arrhythmias) including ventricular tachycardia and ventricular fibrillation</li>
+    <li>
+    Rising urea levels in the blood (uremia) may lead to brain encephalopathy, pericarditis (inflammation of the heart lining), or low calcium blood levels (hypocalcemia)</li>
+  </ul>
+
+<br>
+<hr>
+<br>
+	</div>
+
+    <!--Footer-->
+    <footer>
+        <div class="container-fluid padding">
+        <div class="row text-center">
+            <div class="col-12">
+                <hr class="light" />
+                <h5>&copy;Baymax: Your healthcare companion</h5>
+            </div>
+        </div>
+        </div>
+    </footer>
+   </form>
+   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
