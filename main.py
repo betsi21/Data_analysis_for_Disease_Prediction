@@ -45,6 +45,12 @@ class RegisterForm(FlaskForm):
 def index():
     return render_template("index.html")
 
+@app.route('/about')
+def about():
+    return render_template("about.html")
+
+
+
 @app.route('/login', methods=['GET', 'POST'])
 def login():
     form = LoginForm()
@@ -71,6 +77,10 @@ def signup():
         return redirect("/login")
     return render_template('signup.html', form=form)
 
+@app.route("/dashboard")
+@login_required
+def dashboard():
+    return render_template("dashboard.html")
 
 if __name__ == "__main__":
 
