@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<p lang="en">
+<head>
+    <title>Baymax | Assessment</title>
+    <meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/carousel/">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.js"></script>
+    <script type="text/javascript" language="JavaScript">
+    window.onload = function () {
+    document.getElementById("download")
+        .addEventListener("click", () => {
+            const invoice = this.document.getElementById("assess");
+            console.log(invoice);
+            console.log(window);
+            var opt = {
+                margin: 1,
+                filename: 'Cancer_Assessment.pdf',
+                image: { type: 'jpeg', quality: 0.98 },
+                html2canvas: { scale: 2 },
+                jsPDF: { unit: 'in', format: 'letter', orientation: 'landscape' }
+            };
+            html2pdf().from(invoice).set(opt).save();
+        })
+   }</script>
+    <style>
+        body {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    color: #5a5a5a;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+nav {
+    font-family: sans-serif;
+}
+
+.navbar-brand {
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.container {
+    max-width: 960px;
+}
+
+.pricing-header {
+    max-width: 700px;
+}
+
+.card-deck .card {
+    min-width: 220px;
+}
+
+.themed-container {
+    padding: 15px;
+    margin-bottom: 30px;
+    background-color: rgba(0, 123, 255, .15);
+    border: 1px solid rgba(0, 123, 255, .2);
+}
+    </style>
+</head>
+<body>
+    <div id="assess">
+        <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+            <h1 class="display-5">Risk Assessment</h1>
+            <p class="lead">Please find below the Risk Assessment</p>
+        </div>
+        <div class="container themed-container"><h1 style="text-align: center;">{{prediction_text}}</h1></div>
+        <p style="text-align: center;">&copy;Baymax: your health care companion</p>
+    </div>
+    <div class="container">
+    <h2>Breast Cancer </h2>
+    <div style="text-align: center; margin-top: 20px">
+       <img style="max-width: 600px" src="static/img/breastcancer.jpg" /><br/><br/>
+    </div>
+    <p>Breast cancer is cancer that develops from breast tissue. Signs of breast cancer may include a lump in the breast, a change in breast shape, dimpling of the skin, fluid coming from the nipple, a newly inverted nipple, or a red or scaly patch of skin.<br></p>
+    
+    <h3>Symptoms</h3>
+    <p>Signs and symptoms of breast cancer may include:</p>
+    <ul>
+      <li>A breast lump or thickening that feels different from the surrounding tissue</li>
+      <li>Change in the size, shape or appearance of a breast
+      </li>
+      <li>
+        Changes to the skin over the breast, such as dimpling
+      </li>
+      <li>
+        A newly inverted nipple
+      </li>
+      <li>Peeling, scaling, crusting or flaking of the pigmented area of skin surrounding the nipple (areola) or breast skin</li>
+      <li>Redness or pitting of the skin over your breast, like the skin of an orange</li>
+    </ul>
+    <h3>Causes</h3>
+    <p>Doctors know that breast cancer occurs when some breast cells begin to grow abnormally. These cells divide more rapidly than healthy cells do and continue to accumulate, forming a lump or mass. Cells may spread (metastasize) through your breast to your lymph nodes or to other parts of your body.<br>
+    Breast cancer most often begins with cells in the milk-producing ducts (invasive ductal carcinoma). Breast cancer may also begin in the glandular tissue called lobules (invasive lobular carcinoma) or in other cells or tissue within the breast.
+    <br>
+    Researchers have identified hormonal, lifestyle and environmental factors that may increase your risk of breast cancer. But it's not clear why some people who have no risk factors develop cancer, yet other people with risk factors never do. It's likely that breast cancer is caused by a complex interaction of your genetic makeup and your environment.</p>
+    <br>
+    <hr>
+    </div>
+    <br/>
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="btn btn-primary btn-lg" id="download">Download</button>
+</body>
+</html>
